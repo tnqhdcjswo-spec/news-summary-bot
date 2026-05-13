@@ -2,21 +2,23 @@ name: Daily News Bot
 
 on:
   schedule:
-    # 매일 아침 7시(한국 시간)에 실행 (UTC 기준 22:00)
-    - cron: '0 22 * * *'
-  workflow_dispatch: # 우리가 수동으로 버튼 눌러서 실행하고 싶을 때
+    - cron: '0 22 * * *' # 한국 시간 아침 7시
+  workflow_dispatch: # 직접 실행 버튼 활성화
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # 깃허브가 요구하는 최신 노드 버전 강제 설정
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
     steps:
       - name: 코드 가져오기
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # v3 대신 v4 사용
 
       - name: 파이썬 설치
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # v4 대신 v5 사용
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
       - name: 필요한 도구 설치
         run: pip install requests
