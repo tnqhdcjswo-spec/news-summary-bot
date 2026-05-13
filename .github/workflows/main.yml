@@ -23,10 +23,12 @@ jobs:
       - name: 필요한 도구 설치
         run: pip install requests
 
-      - name: 프로그램 실행
+  - name: 프로그램 실행
         env:
           NAVER_ID: ${{ secrets.NAVER_ID }}
           NAVER_SECRET: ${{ secrets.NAVER_SECRET }}
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
+          # 이 줄을 추가하거나 확인해 주세요
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true 
         run: python main.py
