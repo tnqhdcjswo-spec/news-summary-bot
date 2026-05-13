@@ -7,8 +7,8 @@ client_id = "isQRmYCuA1s6V6CMFxuQ"
 client_secret = "KroQ1W40OX"
 
 # 2. 텔레그램 정보 (여기에 직접 복사해서 넣어주세요!)
-bot_token = "여기에_봇_토큰_넣기"
-chat_id = "여기에_숫자_아이디_넣기"
+bot_token = "8589841222:AAEBDGIQoTHMRXzxSlKCqjyUn1HdHnkzMhM"
+chat_id = "7868549264"
 
 # 네이버 뉴스 가져오기
 encText = urllib.parse.quote("국내 증시 전망")
