@@ -3,8 +3,8 @@ import json
 import requests
 
 # 1. 네이버 정보 (알려주신 것을 직접 넣었어요)
-client_id = "isQRmYCuA1s6V6CMFxuQ"
-client_secret = "KroQ1W40OX"
+client_id = "KroQ1W40OX"
+client_secret = "isQRmYCuA1s6V6CMFxuQ"
 
 # 2. 텔레그램 정보 (여기에 직접 복사해서 넣어주세요!)
 bot_token = "8589841222:AAEBDGIQoTHMRXzxSlKCqjyUn1HdHnkzMhM"
